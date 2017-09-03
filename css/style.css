@@ -1042,7 +1042,7 @@ display:block;
 }
 .box-area{padding: 15px;
 	/*background: #ffffff;*/
-	margin-top: 8px;
+	margin-top: -7px;
 	/*border: 2px solid #f3f3f3;*/
 }
 .box-area1{padding: 15px;
@@ -1944,7 +1944,33 @@ span.color {
     -ms-transition: 0.5s all;
 }
 
-
+.banner1 {
+    background: url(../img/banner.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+      min-height: 261px;
+}
+.w3_agileits_service_banner_info h2 {
+    text-align: center;
+    font-size: 2.3em;
+    color: #fff;
+    padding-top: 3em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+.wthree_footer_grid_left {
+    /*width: 62px;
+    height: 62px;
+    border-radius: 50%;*/
+    text-align: center;
+    /*background: #0ac876;
+     border: 2px solid #fff; */
+    margin: 0 auto 1em;
+}
 @media(max-width: 1080px){
 	
 	.services {
@@ -1963,8 +1989,13 @@ span.color {
 		min-height: 345px;
 	}
 	
-	
-	
+	.banner1{
+		min-height: 160px;
+	}
+	.w3_agileits_service_banner_info h2 {
+		font-size: 2em;
+		padding-top: 2em;
+	}
 }
 
 
@@ -1988,7 +2019,10 @@ span.color {
 		float: left;
 	}
 	
-	
+	.banner1{
+		min-height: 168px;
+	}
+
 }
 
 @media(max-width: 800px){
@@ -1996,7 +2030,9 @@ span.color {
 	.services {
 		padding: 4em 0;
 	}
-	
+	.w3_agileits_service_banner_info h2 {
+		font-size: 2.3em;
+	}
 }
 
 
@@ -2007,7 +2043,12 @@ span.color {
 	.wthree-services-icon {
 		width: 29%;
 	}
-	
+	.banner1{
+		min-height: 143px;
+	}
+	.w3_agileits_service_banner_info h2 {
+		font-size: 2em;
+	}
 }
 @media(max-width: 600px){
 	
@@ -2042,7 +2083,9 @@ span.color {
 	.services-grids.w3l-seco {
 		margin-top: 3em;
 	}
-	
+	.w3_agileits_service_banner_info h2 {
+		font-size: 1.8em;
+	}
 }
 @media(max-width: 440px){
 	p.sub-p2 {
@@ -2063,7 +2106,14 @@ span.color {
 	p.sub-p2 {
 		font-size: 1.05em;
 	}
-	
+	.banner1{
+		min-height: 116px;
+	}
+	.w3_agileits_service_banner_info h2 {
+		font-size: 1.6em;
+		letter-spacing: 3px;
+		padding-top: 1.8em;
+	}
 }
 
 @media(max-width: 384px){
@@ -2079,6 +2129,11 @@ span.color {
 	p {
 		line-height: 1.8em;
 	}
-	
+	.banner1{
+		min-height: 100px;
+	}
+	.w3_agileits_service_banner_info h2 {
+		font-size: 1.4em;
+	}
 }
 
