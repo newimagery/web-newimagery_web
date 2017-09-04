@@ -1971,6 +1971,39 @@ span.color {
      border: 2px solid #fff; */
     margin: 0 auto 1em;
 }
+#we-offer .we_offers{
+	border-bottom:1px solid #d4d4d4;
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+
+}
+.padding{
+	padding-bottom:40px;
+	padding-top:60px;
+}
+.padding_half{
+	padding-bottom:10px;
+	padding-top:20px;
+}
+.bottom35{
+	margin-bottom:35px;
+}
+.top10{ margin-top:10px; }
+
+#we-offer .we_offers .left_offer{
+	align-items:center;
+}
+#we-offer .we_offers h4{
+	color:#2582bd;
+	font-size:1.8rem;
+	font-weight:bold;
+}
 @media(max-width: 1080px){
 	
 	.services {
