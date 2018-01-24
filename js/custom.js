@@ -1,10 +1,19 @@
-/*global jQuery:false */
 jQuery(document).ready(function($) {
 "use strict";
 
-	
-		//add some elements with animate effect
+    $("header").load("public/header.html",null,function(response,status,xhr){
+      $('.nav.navbar-nav > li > a').each(function(index,el){
+        if(el.getAttribute('href') == window.location.pathname){
+          el.parentElement.className ='active';
+        }
+      });
+    });
+    
+    $("footer").load("public/footer.html");
+    
 
+    
+    
 		$(".big-cta").hover(
 			function () {
 			$('.cta a').addClass("animated shake");
@@ -13,6 +22,7 @@ jQuery(document).ready(function($) {
 			$('.cta a').removeClass("animated shake");
 			}
 		);
+    
 		$(".box").hover(
 			function () {
 			$(this).find('.icon').addClass("animated fadeInDown");
@@ -39,10 +49,8 @@ jQuery(document).ready(function($) {
 		});	
 
 		
-		// tooltip
 		$('.social-network li a, .options_box .color a').tooltip();
  
-		//scroll to top
 		$(window).scroll(function(){
 			if ($(this).scrollTop() > 100) {
 				$('.scrollup').fadeIn();
@@ -50,10 +58,12 @@ jQuery(document).ready(function($) {
 				$('.scrollup').fadeOut();
 			}
 		});
+    
 		$('.scrollup').click(function(){
 			$("html, body").animate({ scrollTop: 0 }, 1000);
 				return false;
 		});
+    
     $('#post-slider').flexslider({
         // Primary Controls
         controlNav          : false,              //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
@@ -119,7 +129,7 @@ jQuery(document).ready(function($) {
         sync                : "",                //{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.
         asNavFor            : "",                //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
     });
-	/* -------- Isotope Filtering -------- */
+
 		var $container = $('#isotope-gallery-container');
 		var $filter = $('.filter');
 		$(window).load(function () {
@@ -139,12 +149,11 @@ jQuery(document).ready(function($) {
 		});
 		});
 		$(window).smartresize(function () {
-		$container.isotope('reLayout');
+      $container.isotope('reLayout');
 		});
-		// End Isotope Filtering
+    
 		$('.gallery-zoom').magnificPopup({ 
 				type: 'image'
-				// other options
-			});
+    });
 			 
 });
